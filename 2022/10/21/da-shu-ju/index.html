@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 项某的博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="项某的博客">
+    <meta name="description" content="在大一的一年里我学到了以下关于Linux的知识date: 2022-10-21 15:46:01
+Linux指令大全一.文件管理：1.ls命令 – 显示指定工作目录下的文件及属性信息​    ls是最常被使用到的Linux命令之一，来自于英">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 项某的博客</title>
+    <title>项某的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -337,12 +338,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -378,28 +379,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-10-20
+                    2022-10-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-10-20
+                    2022-10-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    73
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    5 Min
                 </div>
                 
 
@@ -419,19 +420,153 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <p>在大一的一年里我学到了以下关于Linux的知识<br>date: 2022-10-21 15:46:01</p>
+<h2 id="Linux指令大全"><a href="#Linux指令大全" class="headerlink" title="Linux指令大全"></a>Linux指令大全</h2><h3 id="一-文件管理："><a href="#一-文件管理：" class="headerlink" title="一.文件管理："></a>一.文件管理：</h3><h4 id="1-ls命令-–-显示指定工作目录下的文件及属性信息"><a href="#1-ls命令-–-显示指定工作目录下的文件及属性信息" class="headerlink" title="1.ls命令 – 显示指定工作目录下的文件及属性信息"></a>1.ls命令 – 显示指定工作目录下的文件及属性信息</h4><p>​    ls是最常被使用到的Linux命令之一，来自于英文单词list的缩写，也正如list单词的英文意思，其功能是列举出指定目录下的文件名称及其属性。</p>
+<p>​    </p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-a</td>
+<td align="center">显示所有文件及目录 (包括以“.”开头的隐藏文件)</td>
+</tr>
+<tr>
+<td align="center">-l</td>
+<td align="center">使用长格式列出文件及目录的详细信息</td>
+</tr>
+<tr>
+<td align="center">-r</td>
+<td align="center">将文件以相反次序显示(默认依英文字母次序)</td>
+</tr>
+<tr>
+<td align="center">-t</td>
+<td align="center">根据最后的修改时间排序</td>
+</tr>
+<tr>
+<td align="center">-A</td>
+<td align="center">同 -a ，但不列出 “.” (当前目录) 及 “..” (父目录)</td>
+</tr>
+<tr>
+<td align="center">-S</td>
+<td align="center">根据文件大小排序</td>
+</tr>
+<tr>
+<td align="center">-R</td>
+<td align="center">递归列出所有子目录</td>
+</tr>
+<tr>
+<td align="center">-d</td>
+<td align="center">查看目录的信息，而不是里面子文件的信息</td>
+</tr>
+<tr>
+<td align="center">-i</td>
+<td align="center">输出文件的inode节点信息</td>
+</tr>
+<tr>
+<td align="center">-m</td>
+<td align="center">水平列出文件，以逗号间隔</td>
+</tr>
+<tr>
+<td align="center">-X</td>
+<td align="center">按文件扩展名排序</td>
+</tr>
+<tr>
+<td align="center">–color</td>
+<td align="center">输出信息中带有着色效果</td>
+</tr>
+</tbody></table>
+<p><strong>参考示例：</strong></p>
+<p>输出当前目录中的文件（默认不含隐藏文件）：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls</span><br><span class="line">anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates</span><br><span class="line">Desktop          Downloads  Music                 Public    Videos</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>输出当前目录中的文件（含隐藏文件）：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -a</span><br><span class="line">.                .bashrc  Documents             Music      Videos</span><br><span class="line">..               .cache   Downloads             Pictures   .viminfo</span><br><span class="line">anaconda-ks.cfg  .config  .esd_auth             .pki</span><br><span class="line">.bash_history    .cshrc   .ICEauthority         Public</span><br><span class="line">.bash_logout     .dbus    initial-setup-ks.cfg  .tcshrc</span><br><span class="line">.bash_profile    Desktop  .local                Templates</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>输出文件的长格式，包含属性详情信息：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -l</span><br><span class="line">total 8</span><br><span class="line">-rw-------. 1 root root 1430 Dec 14 08:05 anaconda-ks.cfg</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Desktop</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Documents</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Downloads</span><br><span class="line">-rw-r--r--. 1 root root 1585 Dec 14 08:34 initial-setup-ks.cfg</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Music</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Pictures</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Public</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Templates</span><br><span class="line">drwxr-xr-x. 2 root root    6 Dec 14 08:37 Videos</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<p>输出指定目录中的文件列表：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls /etc</span><br><span class="line">adjtime                     hosts                     pulse</span><br><span class="line">aliases                     hosts.allow               qemu-ga</span><br><span class="line">alsa                        hosts.deny                qemu-kvm</span><br><span class="line">alternatives                hp                        radvd.conf</span><br><span class="line">anacrontab                  idmapd.conf               ras</span><br><span class="line">asound.conf                 init.d                    rc0.d</span><br><span class="line">at.deny                     inittab                   rc1.d</span><br><span class="line">………………省略部分输出信息………………</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>输出文件名称及inode属性块号码：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -i</span><br><span class="line">35290115 anaconda-ks.cfg  35290137 initial-setup-ks.cfg  35290164 Templates</span><br><span class="line"> 1137391 Desktop          17840039 Music                 51609597 Videos</span><br><span class="line"> 1137392 Documents        35290165 Pictures</span><br><span class="line">17840038 Downloads        51609596 Public</span><br></pre></td></tr></tbody></table></figure>
+
+<p>搭配通配符一起使用，输出指定目录中所有以sd开头的文件名称：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls /dev/sd*</span><br><span class="line">/dev/sda  /dev/sda1  /dev/sda2</span><br></pre></td></tr></tbody></table></figure>
+
+<p>依据文件大小进行排序，输出指定目录中文件属性详情信息：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -Sl /etc</span><br><span class="line">total 1348</span><br><span class="line">-rw-r--r--.  1 root root    692241 Sep 10  2018 services</span><br><span class="line">-rw-r--r--.  1 root root     66482 Dec 14 08:34 ld.so.cache</span><br><span class="line">-rw-r--r--.  1 root root     60352 May 11  2017 mime.types</span><br><span class="line">-rw-r--r--.  1 root dnsmasq  26843 Aug 12  2018 dnsmasq.conf</span><br><span class="line">-rw-r--r--.  1 root root     25696 Dec 12  2018 brltty.conf</span><br><span class="line">-rw-r--r--.  1 root root      9450 Aug 12  2018 nanorc</span><br><span class="line">-rw-r--r--.  1 root root      7265 Dec 14 08:03 kdump.conf</span><br><span class="line">-rw-------.  1 tss  tss       7046 Aug 13  2018 tcsd.conf</span><br><span class="line">………………省略部分输出信息………………</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-cp命令-–-复制文件或目录"><a href="#2-cp命令-–-复制文件或目录" class="headerlink" title="2.cp命令 – 复制文件或目录"></a>2.cp命令 – 复制文件或目录</h3><p>​    cp命令来自于英文单词copy的缩写，用于将一个或多个文件或目录复制到指定位置，亦常用于文件的备份工作。-r参数用于递归操作，复制目录时若忘记加则会直接报错，而-f参数则用于当目标文件已存在时会直接覆盖不再询问，这两个参数尤为常用。</p>
+<p><strong>语法格式：</strong>cp [参数] 源文件 目标文件</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-f</td>
+<td align="center">若目标文件已存在，则会直接覆盖原文件</td>
+</tr>
+<tr>
+<td align="center">-i</td>
+<td align="center">若目标文件已存在，则会询问是否覆盖</td>
+</tr>
+<tr>
+<td align="center">-p</td>
+<td align="center">保留源文件或目录的所有属性</td>
+</tr>
+<tr>
+<td align="center">-r</td>
+<td align="center">递归复制文件和目录</td>
+</tr>
+<tr>
+<td align="center">-d</td>
+<td align="center">当复制符号连接时，把目标文件或目录也建立为符号连接，并指向与源文件或目录连接的原始文件或目录</td>
+</tr>
+<tr>
+<td align="center">-l</td>
+<td align="center">对源文件建立硬连接，而非复制文件</td>
+</tr>
+<tr>
+<td align="center">-s</td>
+<td align="center">对源文件建立符号连接，而非复制文件</td>
+</tr>
+<tr>
+<td align="center">-b</td>
+<td align="center">覆盖已存在的文件目标前将目标文件备份</td>
+</tr>
+<tr>
+<td align="center">-v</td>
+<td align="center">详细显示cp命令执行的操作过程</td>
+</tr>
+<tr>
+<td align="center">-a</td>
+<td align="center">等价于“pdr”选项</td>
+</tr>
+</tbody></table>
+<p><strong>参考实例</strong></p>
+<p>在当前工作目录中，将某个文件复制一份，并定义新文件名称：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp anaconda-ks.cfg kickstart.cfg</span><br></pre></td></tr></tbody></table></figure>
+
+<p>在当前工作目录中，将某个目录复制一份，并定义新目录名称：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp -r Documents Doc</span><br></pre></td></tr></tbody></table></figure>
+
+<p>复制某个文件时，保留其原始权限及用户归属信息：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp -a kickstart.cfg ks.cfg</span><br></pre></td></tr></tbody></table></figure>
+
+<p>将某个文件复制到/etc目录中，并覆盖已有文件，不进行询问：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp -f ks.cfg /etc</span><br></pre></td></tr></tbody></table></figure>
+
+<p>将多个文件一同复制到/etc目录中，如已有目标文件名称则默认询问是否覆盖：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp anaconda-ks.cfg ks.cfg /etc</span><br><span class="line">cp: overwrite '/etc/ks.cfg'? y</span><br></pre></td></tr></tbody></table></figure>
+
 
                 
             </div>
@@ -458,7 +593,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/10/20/hello-world/">http://example.com/2022/10/20/hello-world/</a>
+                    <a href="http://example.com/2022/10/21/da-shu-ju/">http://example.com/2022/10/21/da-shu-ju/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -571,7 +706,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2022-10-20T22-16-31',
+        id: '2022-10-21T15-52-53',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -595,7 +730,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Thu Oct 20 2022 22:16:31 GMT+0800',
+    id: 'Fri Oct 21 2022 15:52:53 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -620,9 +755,9 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://example.com/2022/10/20/hello-world/';
-        this.page.identifier = '/2022/10/20/hello-world/';
-        this.page.title = 'Hello World';
+        this.page.url = 'http://example.com/2022/10/21/da-shu-ju/';
+        this.page.identifier = '/2022/10/21/da-shu-ju/';
+        this.page.title = '';
     };
     let disqus_shortname = '';
 
@@ -674,9 +809,10 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/10/21/da-shu-ju/">
                     <div class="card-image">
@@ -694,9 +830,9 @@ gitment.render('gitment-content');
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -705,6 +841,7 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -712,7 +849,7 @@ gitment.render('gitment-content');
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2022/10/20/hello-world/">
@@ -742,7 +879,6 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
