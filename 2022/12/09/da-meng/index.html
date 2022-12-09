@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 项某的博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="达梦, 项某的博客">
+    <meta name="description" content="xcy的UDAF代码
+12345678910111213141516171819202122232425262728293031323334353637383940UDAF代码：import org.apache.spark.sql.exp">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 项某的博客</title>
+    <title>达梦 | 项某的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -346,12 +347,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">达梦</h1>
                 </div>
             </div>
         </div>
@@ -387,28 +388,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-10-20
+                    2022-12-09
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-10-20
+                    2022-12-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    73
+                    795
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    4 Min
                 </div>
                 
 
@@ -433,19 +434,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <p>xcy的UDAF代码</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">UDAF代码：</span><br><span class="line">import org.apache.spark.sql.expressions.Aggregator</span><br><span class="line">import org.apache.spark.sql.{Encoder, Encoders}</span><br><span class="line">object UDAF {</span><br><span class="line">  /**</span><br><span class="line">   * 计算平均值</span><br><span class="line">   *</span><br><span class="line">   */</span><br><span class="line">  object AverageAggregator extends Aggregator[User, Average, Double] {</span><br><span class="line">    // 初始化buffer</span><br><span class="line">    override def zero: Average = Average(0L, 0L)</span><br><span class="line">    // 处理一条新的记录</span><br><span class="line">    override def reduce(b: Average, a: User): Average = {</span><br><span class="line">      b.sum += a.age</span><br><span class="line">      b.count += 1L</span><br><span class="line">      b</span><br><span class="line">    }</span><br><span class="line">    // 合并聚合buffer</span><br><span class="line">    override def merge(b1: Average, b2: Average): Average = {</span><br><span class="line">      b1.sum += b2.sum</span><br><span class="line">      b1.count += b2.count</span><br><span class="line">      b1</span><br><span class="line">    }</span><br><span class="line">    // 减少中间数据传输</span><br><span class="line">    override def finish(reduction: Average): Double = reduction.sum.toDouble / reduction.count</span><br><span class="line">    override def bufferEncoder: Encoder[Average] = Encoders.product</span><br><span class="line">    // 最终输出结果的类型</span><br><span class="line">    override def outputEncoder: Encoder[Double] = Encoders.scalaDouble</span><br><span class="line">  }</span><br><span class="line">  /**</span><br><span class="line">   * 计算平均值过程中使用的Buffer</span><br><span class="line">   *</span><br><span class="line">   * @param sum</span><br><span class="line">   * @param count</span><br><span class="line">   */</span><br><span class="line">  case class Average(var sum: Long, var count: Long) {</span><br><span class="line">  }</span><br><span class="line">  case class User(id: Long, name: String, sex: String, age: Long) {</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>xcy的连接代码</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">import org.apache.log4j.{Level, Logger}</span><br><span class="line">import org.apache.spark.sql.functions.col</span><br><span class="line">import org.apache.spark.sql.{Column, ColumnName, Encoder, Encoders, SaveMode, SparkSession, functions}</span><br><span class="line">import java.util.Properties</span><br><span class="line">import org.apache.commons.codec.Encoder</span><br><span class="line">import org.apache.spark.sql.expressions.Aggregator</span><br><span class="line">object JDBC {</span><br><span class="line">  def main(args: Array[String]): Unit = {</span><br><span class="line">    Logger.getLogger("org").setLevel(Level.ERROR)</span><br><span class="line">    Logger.getLogger("akka").setLevel(Level.ERROR)</span><br><span class="line">    val spark=SparkSession.builder().appName(this.getClass.getName).master("local[*]").getOrCreate()</span><br><span class="line">    val JDBC_URL="jdbc:dm://119.96.83.129:31999"</span><br><span class="line">    val DM_JDBC_DRIVER="dm.jdbc.driver.DmDriver"</span><br><span class="line">    val conn=new Properties()</span><br><span class="line">    conn.put("user","SYSDBA")</span><br><span class="line">    conn.put("password","xcy17371126298")</span><br><span class="line">    conn.put("driver",DM_JDBC_DRIVER)</span><br><span class="line">    spark.read.jdbc(JDBC_URL,"JOB.T_DEAL",conn).createTempView("shu1")</span><br><span class="line">    val data1=spark.sqlContext.sql("select * from shu1")</span><br><span class="line">    val T1=spark.udf.register("T1", (str: String) =&gt; {</span><br><span class="line">      if(str==""){</span><br><span class="line">        "NULL"</span><br><span class="line">      }else if(str.contains("-")){</span><br><span class="line">        if(str.contains("万")){</span><br><span class="line">          str.split("-")(0).toDouble * 10000 + "-" + str.split("-")(1).split("万")(0).toDouble * 10000 + "元/月"</span><br><span class="line">        }else{</span><br><span class="line">          str.split("-")(0).toDouble * 1000 + "-" + str.split("-")(1).split("千")(0).toDouble * 1000 + "元/月"</span><br><span class="line">        }</span><br><span class="line">      }else{</span><br><span class="line">        str</span><br><span class="line">      }</span><br><span class="line">    })</span><br><span class="line">    import spark.implicits._</span><br><span class="line">    data1.withColumn("SALARY", T1($"SALARY")).createTempView("shu2")</span><br><span class="line">    val data2 = spark.sqlContext.sql("select * from shu2")</span><br><span class="line">    val T2=spark.udf.register("T2",(price: String) =&gt; {</span><br><span class="line">      if(price.contains("-")){</span><br><span class="line">        val xia=price.split("-")(0).toDouble.toInt</span><br><span class="line">        val shang=price.split("-")(1).split("元")(0).toDouble.toInt</span><br><span class="line">        if ( xia&lt; 5000)"5K以下"</span><br><span class="line">        else if(shang&lt;8000)"5K~8K"</span><br><span class="line">        else if(shang&lt;12000)"8K~12K"</span><br><span class="line">        else if(shang&lt;20000)"12K~20K"</span><br><span class="line">        else if(shang&gt;=20000)"20K以上"</span><br><span class="line">        else "无工资记载"</span><br><span class="line">      }else{</span><br><span class="line">        price</span><br><span class="line">      }</span><br><span class="line">    })</span><br><span class="line">    val result=data2.withColumn("SALARY_RANGE", T2($"SALARY"))</span><br><span class="line">    result.write.mode(SaveMode.Append)</span><br><span class="line">      .option("isolationLevel", "READ_COMMITTED")</span><br><span class="line">      .jdbc(JDBC_URL, "JOB.TEST", conn)</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>wl的代码</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">package wan</span><br><span class="line"></span><br><span class="line">import org.apache.log4j.{Level, Logger}</span><br><span class="line"></span><br><span class="line">import java.util.Properties</span><br><span class="line">import org.apache.spark.sql.{SaveMode, SparkSession}</span><br><span class="line"></span><br><span class="line">object Dmtest2{</span><br><span class="line">  def main(args: Array[String]): Unit = {</span><br><span class="line">    Logger.getLogger("org").setLevel(Level.ERROR)</span><br><span class="line">    Logger.getLogger("akka").setLevel(Level.ERROR)</span><br><span class="line">    val spark = SparkSession.builder().appName(this.getClass.getName).master("local[*]").getOrCreate()</span><br><span class="line">    val dmurl = "jdbc:dm://localhost:5236"</span><br><span class="line">    val dmdeiver = "dm.jdbc.driver.DmDriver"</span><br><span class="line">    val dmconn = new Properties()</span><br><span class="line">    dmconn.put("user","SYSDBA")</span><br><span class="line">    dmconn.put("password","SYSDBA")</span><br><span class="line">    dmconn.put("driver",dmdeiver)</span><br><span class="line">    val job = spark.read.jdbc(dmurl,"JOB.T_DEAL",dmconn)</span><br><span class="line">    def sal(s: String)={</span><br><span class="line">      if(s.contains("万/年")) s.split("-")(0).toDouble/12*10000+"-"+s.split("-")(1).split("万")(0).toDouble/12*10000+"元/月"</span><br><span class="line">      else if(s.contains("万")) s.split("-")(0).toDouble*10000+"-"+s.split("-")(1).split("万")(0).toDouble*10000+"元/月"</span><br><span class="line">      else if(s.contains("千以下")) 0+"-"+s.split("千")(0).toDouble*1000+"元/月"</span><br><span class="line">      else if(s.contains("千")) s.split("-")(0).toDouble*1000+"-"+s.split("-")(1).split("千")(0).toDouble*1000+"元/月"</span><br><span class="line">      else "0-0元/月"</span><br><span class="line">    }</span><br><span class="line">    val saludf = spark.udf.register("saludf",sal _)</span><br><span class="line"></span><br><span class="line">    import spark.implicits._</span><br><span class="line">    val saldata = job.withColumn("SALARY",saludf($"SALARY"))</span><br><span class="line">    def range(s: String) = {</span><br><span class="line">      val max=s.split("-")(1).split("元")(0).toDouble</span><br><span class="line">      if ( max&lt; 5000)"5K以下"</span><br><span class="line">      else if(max&lt;8000)"5K~8K"</span><br><span class="line">      else if(max&lt;12000)"8K~12K"</span><br><span class="line">      else if(max&lt;20000)"12K~20K"</span><br><span class="line">      else "20K以上"</span><br><span class="line">    }</span><br><span class="line">    val rangeudf = spark.udf.register("range",range _)</span><br><span class="line">    val rangedata = saldata.withColumn("SALARY_RANGE",rangeudf($"SALARY"))</span><br><span class="line">    rangedata.createOrReplaceTempView("data")</span><br><span class="line">    println("处理后的数据:")</span><br><span class="line">    rangedata.show()</span><br><span class="line">    println("不同学历下的工作状态:")</span><br><span class="line">    spark.sql("select EDUCATION,count(*) NUMBER from data group by EDUCATION order by number desc;").show()</span><br><span class="line">    println("不同学历下的薪资人数:")</span><br><span class="line">    spark.sql("select EDUCATION,SALARY_RANGE,count(*) NUMBER from data group by EDUCATION,SALARY_RANGE order by number desc;").show()</span><br><span class="line">    //rangedata.write.mode(SaveMode.Append).option("isolationLevel","READ_COMMITTED").jdbc(dmurl,"JOB.T_DEAL_PRE2",dmconn)</span><br><span class="line">    spark.stop()</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
             </div>
@@ -472,7 +469,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/10/20/hello-world/">http://example.com/2022/10/20/hello-world/</a>
+                    <a href="http://example.com/2022/12/09/da-meng/">http://example.com/2022/12/09/da-meng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -579,7 +576,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Thu Oct 20 2022 22:16:31 GMT+0800',
+    id: 'Fri Dec 09 2022 13:56:39 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -1110,9 +1107,48 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2022/12/09/da-meng/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="达梦">
+                        
+                        <span class="card-title">达梦</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            项某
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/10/21/da-shu-ju/">
                     <div class="card-image">
@@ -1130,45 +1166,8 @@ gitment.render('gitment-content');
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-21
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            项某
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/10/20/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-21
                             </span>
                         <span class="publish-author">
                             
@@ -1178,7 +1177,6 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
