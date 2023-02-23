@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Shawlon`s Blog</title>
+  <title>信息技术交流圈</title>
   
-  <subtitle>Yshawlon</subtitle>
+  <subtitle>Welcome to exchange technology together</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yshawlon.cn/"/>
-  <updated>2022-05-14T15:01:54.000Z</updated>
+  <updated>2023-02-23T02:11:49.223Z</updated>
   <id>https://www.yshawlon.cn/</id>
   
   <author>
@@ -15,6 +15,146 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql数据库 </title>
+    <link href="https://www.yshawlon.cn/mysql-shu-ju-ku.html"/>
+    <id>https://www.yshawlon.cn/mysql-shu-ju-ku.html</id>
+    <published>2022-02-10T10:29:16.000Z</published>
+    <updated>2023-02-23T02:11:49.223Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、-mysql数据库&quot;&gt;&lt;a href=&quot;#一、-mysql数据库&quot; class=&quot;headerlink&quot; title=&quot;一、 mysql数据库&quot;&gt;&lt;/a&gt;一、
+        
+      
+    
+    </summary>
+    
+      <category term="关系型数据库" scheme="https://www.yshawlon.cn/categories/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="https://www.yshawlon.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="Mysql" scheme="https://www.yshawlon.cn/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux </title>
+    <link href="https://www.yshawlon.cn/linux.html"/>
+    <id>https://www.yshawlon.cn/linux.html</id>
+    <published>2022-02-07T10:29:16.000Z</published>
+    <updated>2023-02-23T02:11:46.918Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux指令大全&quot;&gt;&lt;a href=&quot;#Linux指令大全&quot; class=&quot;headerlink&quot; title=&quot;Linux指令大全&quot;&gt;&lt;/a&gt;Linux指令大全&lt;/h1&gt;&lt;h2 id=&quot;一-文件管理&quot;&gt;&lt;a href=&quot;#一-文件管理&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="操作系统" scheme="https://www.yshawlon.cn/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="https://www.yshawlon.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="Linux" scheme="https://www.yshawlon.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mongodb数据库 </title>
+    <link href="https://www.yshawlon.cn/mongodb.html"/>
+    <id>https://www.yshawlon.cn/mongodb.html</id>
+    <published>2020-03-09T10:29:16.000Z</published>
+    <updated>2023-02-23T02:11:48.131Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、mongodb&quot;&gt;&lt;a href=&quot;#一、mongodb&quot; class=&quot;headerlink&quot; title=&quot;一、mongodb&quot;&gt;&lt;/a&gt;一、mongodb&lt;/h1&gt;&lt;h2 id=&quot;1-介绍和安装&quot;&gt;&lt;a href=&quot;#1-介绍和安装&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="非关系型数据库" scheme="https://www.yshawlon.cn/categories/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="Mongodb" scheme="https://www.yshawlon.cn/tags/Mongodb/"/>
+    
+      <category term="数据库" scheme="https://www.yshawlon.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据分析 </title>
+    <link href="https://www.yshawlon.cn/shu-ju-fen-xi-san-jian-ke.html"/>
+    <id>https://www.yshawlon.cn/shu-ju-fen-xi-san-jian-ke.html</id>
+    <published>2020-03-07T10:29:16.000Z</published>
+    <updated>2023-02-23T02:11:45.593Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一-Jupyter-notebook&quot;&gt;&lt;a href=&quot;#一-Jupyter-notebook&quot; class=&quot;headerlink&quot; title=&quot;一 Jupyter notebook&quot;&gt;&lt;/a&gt;一 Jupyter notebook&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="数据分析" scheme="https://www.yshawlon.cn/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Python" scheme="https://www.yshawlon.cn/tags/Python/"/>
+    
+      <category term="数据分析" scheme="https://www.yshawlon.cn/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python基础 </title>
+    <link href="https://www.yshawlon.cn/1-1python-ji-chu.html"/>
+    <id>https://www.yshawlon.cn/1-1python-ji-chu.html</id>
+    <published>2020-03-06T10:29:16.000Z</published>
+    <updated>2023-02-23T02:11:40.187Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-python-介绍&quot;&gt;&lt;a href=&quot;#1-python-介绍&quot; class=&quot;headerlink&quot; title=&quot;1 python 介绍&quot;&gt;&lt;/a&gt;1 python 介绍&lt;/h4&gt;&lt;h5 id=&quot;1-1-计算机的组成&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://www.yshawlon.cn/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://www.yshawlon.cn/tags/Python/"/>
+    
+      <category term="编程" scheme="https://www.yshawlon.cn/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>VMware 安装 CentOS 8.1 完整教程 </title>
